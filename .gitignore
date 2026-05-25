@@ -1,0 +1,20 @@
+# Terraform
+terraform/.terraform/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Provider binaries
+terraform-provider-*
+
+# Python
+venv/
+__pycache__/
+
+# Secrets
+.env
+*.pem
+
+# VS Code
+.vscode/
