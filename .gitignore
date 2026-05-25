@@ -1,20 +1,26 @@
 # Terraform
-terraform/.terraform/
-.terraform/
+**/.terraform/
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
 
-# Provider binaries
-terraform-provider-*
+# Terraform variable secrets
+*.tfvars
 
 # Python
 venv/
 __pycache__/
+*.pyc
 
 # Secrets
+
 .env
 *.pem
+*.key
 
 # VS Code
 .vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
