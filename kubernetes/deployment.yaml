@@ -2,27 +2,24 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: url-monitor-deployment
+  name: cloud-url-monitor
 
 spec:
   replicas: 2
 
   selector:
     matchLabels:
-      app: url-monitor
+      app: cloud-url-monitor
 
   template:
     metadata:
       labels:
-        app: url-monitor
+        app: cloud-url-monitor
 
     spec:
       containers:
-      - name: url-monitor
-
-        image: cloud-url-monitor:latest
-
-        imagePullPolicy: Never
+      - name: cloud-url-monitor
+        image: sasmita205/cloud-url-monitor:latest
 
         ports:
         - containerPort: 8000
